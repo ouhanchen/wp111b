@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="my_css.css"/>
+</head>
+
+<body>
+
+<h1>我的個人檔案</h1>
+<p>姓名:歐漢宸</p>
+<p>金大資工大一</p>
+<a href="https://www.facebook.com/profile.php?id=100006018090403">我的facebook</a>
+<br>
+
+<pre>
+    生日:8/24
+    性別:男性
+</pre>
+
+<img src="20210928_132800.jpg" width="260" height="345">
+<br>
+
+<h2>告訴我你的資料</h2>
+
+<div>
+    <form action="/action_page.php">
+
+        <label for="fname"></label>
+        <input style="background-color:lightgreen;" type="text" id="fname" name="fname" placeholder="姓氏">
+        <label for="lname"></label>
+        <input style="background-color:lightgreen;" type="text" id="lname" name="lname" placeholder="名字"><br><br>
+
+        <label for="username"></label>
+        <input style="background-color:aqua;" type="text" id="username" name="username" placeholder="帳號" ><br><br>
+        <label for="pwd"></label>
+        <input style="background-color:aqua;" type="password" id="pwd" name="pwd" placeholder="密碼"><br><br>
+
+        <label for="email"></label>
+        <input style="background-color:deepskyblue;"  type="email" id="email" name="email" placeholder="電子郵件"><br><br>
+
+        <label for="phonenumber"></label>
+        <input style="background-color:gold"  type="text" id="phonenumber" name="phonenumber" placeholder="手機號碼"><br><br>
+
+        <p>生日:</p>
+        <label for="birthday"></label><br>
+        <input type="date" id="birthday" name="birthday" ><br><br>
+
+        <p>性別:</p>
+        <input type="radio" id="man" name="gender" value="男性">
+        <label for="man">男性</label><br>
+        <input type="radio" id="woman" name="gender" value="女性">
+        <label for="woman">女性</label><br><br>
+
+        <label for="bloodtype"></label>
+        <input type="text" id="bloodtype" name="bloodtype" placeholder="血型"><br><br>
+
+        <label for="fcolor">最喜歡的顏色</label>
+        <input type="color" id="fcolor" name="fcolor"><br><br>
+
+
+        <input type="submit" onclick="alert('確認註冊?')" value="傳送">
+        <input type="reset" onclick="alert('確認重設?')">
+
+    </form>
+</div>
+
+</body>
+
+<br>
+
+
+
+</html>
