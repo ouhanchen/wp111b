@@ -9,4 +9,4 @@ function vdot(a,b)
 }
 
 let v1=[2,1], v2=[1,3]
-console.log('v1+v2=',vdot(v1,v2))
+console.log('v1*v2=',vdot(v1,v2))
