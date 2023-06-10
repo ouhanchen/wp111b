@@ -68,3 +68,4 @@ window.onhashchange = function () {
   let hash = window.location.hash
   main.innerHTML = pages[hash]
 }
+
