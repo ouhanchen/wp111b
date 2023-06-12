@@ -182,7 +182,7 @@ document.getElementById('button-號角-精零').addEventListener('click', functi
   imageA.src = '圖/幹員/號角/精零.png';
 });
 
-document.getElementById('button-號角-').addEventListener('click', function() {
+document.getElementById('button-號角-造型').addEventListener('click', function() {
   var imageA = document.getElementById('image-號角-精零');
   imageA.src = '圖/幹員/號角/化花.png';
 });
@@ -200,6 +200,21 @@ document.getElementById('button-焰影葦草-精零').addEventListener('click', 
   var imageA = document.getElementById('image-焰影葦草-精零');
   imageA.src = '圖/幹員/焰影葦草/精零.png';
 });
+//流明
+document.getElementById('button-流明-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-流明-精零');
+  imageA.src = '圖/幹員/流明/精二.png';
+});
+
+document.getElementById('button-流明-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-流明-精零');
+  imageA.src = '圖/幹員/流明/精零.png';
+});
+
+document.getElementById('button-流明-造型').addEventListener('click', function() {
+  var imageA = document.getElementById('image-流明-精零');
+  imageA.src = '圖/幹員/流明/燦海浮夢.png';
+});
 
 
 
@@ -215,7 +230,16 @@ document.getElementById('button-淬羽赫默-精零').addEventListener('click', 
   var imageA = document.getElementById('image-淬羽赫默-精零');
   imageA.src = '圖/幹員/淬羽赫默/精零.png';
 });
+//白鐵
+document.getElementById('button-白鐵-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-白鐵-精零');
+  imageA.src = '圖/幹員/白鐵/精二.png';
+});
 
+document.getElementById('button-白鐵-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-白鐵-精零');
+  imageA.src = '圖/幹員/白鐵/精零.png';
+});
 
 
 
@@ -229,6 +253,16 @@ document.getElementById('button-霍爾海雅-精二').addEventListener('click', 
 document.getElementById('button-霍爾海雅-精零').addEventListener('click', function() {
   var imageA = document.getElementById('image-霍爾海雅-精零');
   imageA.src = '圖/幹員/霍爾海雅/精零.png';
+});
+//林
+document.getElementById('button-林-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-林-精零');
+  imageA.src = '圖/幹員/林/精二.png';
+});
+
+document.getElementById('button-林-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-林-精零');
+  imageA.src = '圖/幹員/林/精零.png';
 });
 
 
@@ -244,4 +278,14 @@ document.getElementById('button-麒麟X夜刀-精二').addEventListener('click',
 document.getElementById('button-麒麟X夜刀-精零').addEventListener('click', function() {
   var imageA = document.getElementById('image-麒麟X夜刀-精零');
   imageA.src = '圖/幹員/麒麟X夜刀/精零.png';
+});
+//緘默德克薩斯
+document.getElementById('button-緘默德克薩斯-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-緘默德克薩斯-精零');
+  imageA.src = '圖/幹員/緘默德克薩斯/精二.png';
+});
+
+document.getElementById('button-緘默德克薩斯-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-緘默德克薩斯-精零');
+  imageA.src = '圖/幹員/緘默德克薩斯/精零.png';
 });
