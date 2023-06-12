@@ -1,3 +1,25 @@
+// 顯示或隱藏按鈕
+window.onscroll = function() {
+  showScrollButton();
+};
+
+function showScrollButton() {
+  var scrollBtn = document.getElementById("scrollBtn");
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
+}
+
+// 滾動至頂部
+function scrollToTop() {
+  document.body.scrollTop = 0; // 针对 Safari
+  document.documentElement.scrollTop = 0; // 针对 Chrome、Firefox、IE 和 Opera
+}
+
+
+
 // 獲取按鈕和圖片元素
 const buttonA = document.getElementById('buttonA');
 const buttonB = document.getElementById('buttonB');

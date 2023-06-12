@@ -5,6 +5,9 @@
   <link rel="stylesheet" href="exam.css">
 </head>
 <body>
+
+  <button id="scrollBtn" onclick="scrollToTop()">回到頂部</button>
+
   <header>
     <h1>明日方舟六星幹員一覽表</h1>
     <p>數據紀錄至2023/06/11</p>
@@ -22,18 +25,48 @@
       <li><a href="#特種">特種</a></li>
     </ul>
   </nav>
- 
+
+  <div class="scroll-menu" onmouseover="showProfessionDropdownContent()" onmouseout="hideProfessionDropdownContent()">
+    職業導引
+    <div class="dropdown-content profession-dropdown-content">
+      <a href="#先鋒">先鋒</a>
+      <a href="#近衛">近衛</a>
+      <a href="#狙擊">狙擊</a>
+      <a href="#重裝">重裝</a>
+      <a href="#醫療">醫療</a>
+      <a href="#輔助">輔助</a>
+      <a href="#術士">術士</a>
+      <a href="#特種">特種</a>
+    </div>
+  </div>
+  
   <main>
     <section id="先鋒">
       <h2>
-        <img class="profession" src="圖/固定元件/先鋒.png" >
+        <img class="profession" src="圖/固定元件/先鋒.png">
         先鋒
       </h2>
-      <h3>先鋒幹員一覽</h3>
+      <h3>
+        先鋒幹員一覽
+        <div class="dropdown pioneer-operator-dropdown">
+          <button class="dropbtn pioneer-operator-dropbtn" onclick="pioneertoggleOperatorDropdown()">先鋒幹員快速導引</button>
+          <div class="dropdown-content pioneer-operator-dropdown-content">
+            <a href="#繆爾賽思">繆爾賽思</a>
+            <a href="#伊內絲">伊內絲</a>
+            <a href="#sectionC">段落C</a>
+            <a href="#sectionD">段落D</a>
+            <a href="#sectionE">段落E</a>
+            <a href="#sectionF">段落F</a>
+            <a href="#sectionG">段落G</a>
+            <a href="#sectionH">段落H</a>
+          </div>
+        </div>
+      </h3>
+  
 
       <div class="operator">
     
-        <div class="container"><!-- 繆繆 -->
+        <div class="container" id="繆爾賽思"><!-- 繆繆 -->
 
           <div class="button-image-container">
             <table class="table-picture">
@@ -218,6 +251,190 @@
       
           
         </div>
+
+        <div class="container" id="伊內絲"><!-- 腿很白的土豆 -->
+
+          <div class="button-image-container">
+            <table class="table-picture">
+              <tr>
+                <th>幹員立繪</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://prts.wiki/w/%E4%BC%8A%E5%86%85%E4%B8%9D" >官方網站介紹</a>
+                </td>
+              </tr>
+            </table>
+            <div class="button-group">
+              <button class="btn" id="button-伊內絲-精零"> <img src="圖/固定元件/精零.png"> 精英化零</button>
+              <button class="btn" id="button-伊內絲-精二"> <img src="圖/固定元件/精二.png"> 精英化二</button>
+            </div>
+            <div class="image-group">
+              <img id="image-伊內絲-精零" src="圖/幹員/伊內絲/精零.png" alt="圖片1">
+            </div>
+          </div>
+    
+          <br>
+          <!-- 第一個表格 -->
+          <div class="table-container">
+            <table class="table-name">
+              <tr>
+                <th>幹員名稱</th>
+              </tr>
+              <tr>
+                <td class="text-cell" >伊內絲</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 第二個表格 -->
+            <table class="table-introduce">
+                <tr>
+                <th>分支</th>
+                <th class="text-cell">分支介紹:情報官</th>
+                </tr>
+                <tr>
+                <td class="image-cell" rowspan="2">
+                  <div class="image-wrapper">
+                      <img src="圖/固定元件/情報官.png" alt="圖片">
+                  </div>
+                </td>
+                <td class="description-cell">再部署時間減少，可使用遠程攻擊</td>
+                </tr>
+            </table>
+    
+            <br>
+    
+            <table class="talent-1">
+              <tr>
+                <th>第一天賦:影織</th>
+              </tr>
+              <tr>
+                <td>對每個敵人首次造成傷害後，使目標束縛5秒並偷取其90點攻擊力（持續至目標被擊倒或伊內絲離場）</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <table class="talent-1">
+              <tr>
+                <th>第二天賦:影哨</th>
+              </tr>
+              <tr>
+                <td>攻擊範圍內敵人的隱匿效果失效且移動速度-30%，撤退後留下一個影哨使該效果持續生效（最多1個）</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill1">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/伊內絲/1.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">淬影突襲</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="recovery-cell">攻擊回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">自動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能1</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">下次攻擊使目標3秒內每秒受到相當於伊內絲攻擊力80%的法術傷害（不疊加），並獲得2點部署費用</td>
+                <td>3</td>
+                <td>3</td>
+                <td></td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill2">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2" ><img src="圖/幹員/伊內絲/2.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">暗夜無明</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="autovery-cell">自動回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能2</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">攻擊範圍擴大，攻擊力+110%，自身獲得隱匿，每次攻擊獲得1點部署費用並偷取目標7點攻擊速度（最多70點，持續至技能結束或伊內絲離場）</td>
+                <td>15</td>
+                <td>20</td>
+                <td>12</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill3">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/伊內絲/3.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">獨影歸途</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">被動</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能3</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">首次部署時不消耗部署費用，放置一個影哨後離場並立刻刷新再部署時間
+                  部署後攻擊力+160%，立刻收回影哨對穿過的最多6名敵人造成相當於攻擊力200%的物理傷害，技能期間每對一個敵人造成傷害就獲得1點部署費用</td>
+                <td>0</td>
+                <td>0</td>
+                <td>16</td>
+              </tr>
+            </table>
+          </div>
+      
+          
+        </div>
     
       </div>
 
@@ -228,11 +445,26 @@
         <img class="profession" src="圖/固定元件/近衛.png" >
         近衛
       </h2>
-      <h3>近衛幹員一覽</h3>
+      <h3>
+        近衛幹員一覽
+        <div class="dropdown konoe-operator-dropdown">
+          <button class="dropbtn konoe-operator-dropbtn" onclick="konoetoggleOperatorDropdown()">近衛幹員快速導引</button>
+          <div class="dropdown-content konoe-operator-dropdown-content">
+            <a href="#聖約送葬人">聖約送葬人</a>
+            <a href="#仇白">仇白</a>
+            <a href="#sectionC">段落C</a>
+            <a href="#sectionD">段落D</a>
+            <a href="#sectionE">段落E</a>
+            <a href="#sectionF">段落F</a>
+            <a href="#sectionG">段落G</a>
+            <a href="#sectionH">段落H</a>
+          </div>
+        </div>
+      </h3>
 
       <div class="operator">
 
-        <div class="container"><!-- 腎臟 -->
+        <div class="container" id="聖約送葬人" ><!-- 腎臟 -->
     
           <div class="button-image-container">
             <table class="table-picture">
@@ -421,6 +653,193 @@
           
         </div>
     
+        <div class="container" id="仇白" ><!-- 琴吹紬 -->
+    
+          <div class="button-image-container">
+            <table class="table-picture">
+              <tr>
+                <th>幹員立繪</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://prts.wiki/w/%E4%BB%87%E7%99%BD" >官方網站介紹</a>
+                </td>
+              </tr>
+            </table>
+            <div class="button-group">
+              <button class="btn" id="button-仇白-精零"> <img src="圖/固定元件/精零.png"> 精英化零</button>
+              <button class="btn" id="button-仇白-精二"> <img src="圖/固定元件/精二.png"> 精英化二</button>
+            </div>
+            <div class="image-group">
+              <img id="image-仇白-精零" src="圖/幹員/仇白/精零.png" alt="圖片2">
+            </div>
+          </div>
+    
+          <br>
+          <!-- 第一個表格 -->
+          <div class="table-container">
+            <table class="table-name">
+              <tr>
+                <th>幹員名稱</th>
+              </tr>
+              <tr>
+                <td class="text-cell" >仇白</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 第二個表格 -->
+            <table class="table-introduce">
+                <tr>
+                <th>分支</th>
+                <th class="text-cell">分支介紹:領主</th>
+                </tr>
+                <tr>
+                <td class="image-cell" rowspan="2">
+                  <div class="image-wrapper">
+                      <img src="圖/固定元件/領主.png" alt="圖片">
+                  </div>
+                </td>
+                <td class="description-cell">可以進行遠程攻擊，但此時攻擊力降低至80%</td>
+                </tr>
+            </table>
+    
+            <br>
+    
+            <table class="talent-1">
+              <tr>
+                <th>第一天賦:入隙</th>
+              </tr>
+              <tr>
+                <td>攻擊處於停頓、束縛的敵人時，額外造成相當於攻擊力40%的法術傷害</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <table class="talent-1">
+              <tr>
+                <th>第二天賦:落英	</th>
+              </tr>
+              <tr>
+                <td>攻擊時有20%的機率使目標束縛1.5秒</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill1">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/仇白/1.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">留羽</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="recovery-cell">攻擊回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">自動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能1</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">下次攻擊使目標束縛3秒，該次束縛結束時對目標和附近的所有敵人造成相當於攻擊力300%的法術傷害</td>
+                <td>0</td>
+                <td>4</td>
+                <td></td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill2">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/仇白/2.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">承影</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="recovery-cell">攻擊回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能2</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">對前方範圍內的地面敵人造成攻擊力300%的法術傷害；攻擊範圍改變，攻擊力+140%，攻擊範圍內的地面敵人停頓；技能結束時對范圍內的地面敵人造成攻擊力300%的物理傷害</td>
+                <td>5</td>
+                <td>10</td>
+                <td>5</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill3">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/仇白/3.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">問雪</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="autovery-cell">自動回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能3</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">攻擊範圍擴大，攻擊力+55%，傷害類型變為法術，額外攻擊2個目標，第一天賦的傷害提升至2倍，遠程攻擊不再降低傷害，每次攻擊使自身攻擊速度+13（最多疊加8次）</td>
+                <td>45</td>
+                <td>55</td>
+                <td>30</td>
+              </tr>
+            </table>
+          </div>
+      
+          
+        </div>
+
+
       </div>
 
     </section>
@@ -430,11 +849,26 @@
         <img class="profession" src="圖/固定元件/狙擊.png" >
         狙擊
       </h2>
-      <h3>狙擊幹員一覽</h3>
+      <h3>
+        狙擊幹員一覽
+        <div class="dropdown snipe-operator-dropdown">
+          <button class="dropbtn snipe-operator-dropbtn" onclick="snipetoggleOperatorDropdown()">狙擊幹員快速導引</button>
+          <div class="dropdown-content snipe-operator-dropdown-content">
+            <a href="#鴻雪">鴻雪</a>
+            <a href="#菲亞梅塔">菲亞梅塔</a>
+            <a href="#sectionC">段落C</a>
+            <a href="#sectionD">段落D</a>
+            <a href="#sectionE">段落E</a>
+            <a href="#sectionF">段落F</a>
+            <a href="#sectionG">段落G</a>
+            <a href="#sectionH">段落H</a>
+          </div>
+        </div>
+      </h3>
 
       <div class="operator">
 
-        <div class="container"><!-- 14萬大C -->
+        <div class="container" id="鴻雪"><!-- 14萬大C -->
     
           <div class="button-image-container">
             <table class="table-picture">
@@ -624,6 +1058,193 @@
           
         </div>
 
+        <div class="container" id="菲亞梅塔"><!-- 毀滅鳳凰人、獨臂電鋸俠、苦難陳述者...以下略 -->
+    
+          <div class="button-image-container">
+            <table class="table-picture">
+              <tr>
+                <th>幹員立繪</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://prts.wiki/w/%E8%8F%B2%E4%BA%9A%E6%A2%85%E5%A1%94" >官方網站介紹</a>
+                </td>
+              </tr>
+            </table>
+            <div class="button-group">
+              <button class="btn" id="button-菲亞梅塔-精零"> <img src="圖/固定元件/精零.png"> 精英化零</button>
+              <button class="btn" id="button-菲亞梅塔-精二"> <img src="圖/固定元件/精二.png"> 精英化二</button>
+            </div>
+            <div class="image-group">
+              <img id="image-菲亞梅塔-精零" src="圖/幹員/菲亞梅塔/精零.png" alt="圖片3">
+            </div>
+          </div>
+    
+          <br>
+          <!-- 第一個表格 -->
+          <div class="table-container">
+            <table class="table-name">
+              <tr>
+                <th>幹員名稱</th>
+              </tr>
+              <tr>
+                <td class="text-cell" >菲亞梅塔</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 第二個表格 -->
+            <table class="table-introduce">
+                <tr>
+                <th>分支</th>
+                <th class="text-cell">分支介紹:砲手</th>
+                </tr>
+                <tr>
+                <td class="image-cell" rowspan="2">
+                  <div class="image-wrapper">
+                      <img src="圖/固定元件/砲手.png" alt="圖片">
+                  </div>
+                </td>
+                <td class="description-cell">攻擊造成群體物理傷害</td>
+                </tr>
+            </table>
+    
+            <br>
+    
+            <table class="talent-1">
+              <tr>
+                <th>第一天賦:陳述苦難		</th>
+              </tr>
+              <tr>
+                <td>自身生命會不斷流失（該效果不會使生命降至0）；生命值高於50%時獲得+25%攻擊力的精力充沛；高於80%效果翻倍</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <table class="talent-1">
+              <tr>
+                <th>第二天賦:宣告終局	</th>
+              </tr>
+              <tr>
+                <td>技能持續期間外，攻擊速度+27</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill1">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/菲亞梅塔/1.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">“你須直面”</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="recovery-cell">攻擊回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能1</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">攻擊距離+1，攻擊力+100%</td>
+                <td>5</td>
+                <td>10</td>
+                <td>30</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill2">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/菲亞梅塔/2.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">“你須愧悔”</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="recovery-cell">攻擊回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能2</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">向前發射灼痕彈且每飛行一段距離在彈道上留下灼痕，到達攻擊範圍最遠距離時爆炸造成400%的物理傷害；之後灼痕依次爆炸造成200%的物理傷害</td>
+                <td>0</td>
+                <td>7</td>
+                <td></td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill3">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/菲亞梅塔/3.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">“你須償還”</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="recovery-cell">攻擊回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能3</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">	持續固定攻擊範圍內正前方最遠一格，爆炸範圍擴大，攻擊力提升至125%，對目標位置附近小範圍內的敵人攻擊力額外提升至220%
+                  持續時間無限，可主動關閉技能</td>
+                <td>0</td>
+                <td>15</td>
+                <td></td>
+              </tr>
+            </table>
+          </div>
+      
+          
+        </div>
+
       </div>
 
     </section>
@@ -633,11 +1254,26 @@
         <img class="profession" src="圖/固定元件/重裝.png" >
         重裝
       </h2>
-      <h3>重裝幹員一覽</h3>
+      <h3>
+        重裝幹員一覽
+        <div class="reinstall-dropdown operator-dropdown">
+          <button class="dropbtn reinstall-operator-dropbtn" onclick="reinstalltoggleOperatorDropdown()">重裝幹員快速導引</button>
+          <div class="dropdown-content reinstall-operator-dropdown-content">
+            <a href="#斥罪">斥罪</a>
+            <a href="#號角">號角</a>
+            <a href="#sectionC">段落C</a>
+            <a href="#sectionD">段落D</a>
+            <a href="#sectionE">段落E</a>
+            <a href="#sectionF">段落F</a>
+            <a href="#sectionG">段落G</a>
+            <a href="#sectionH">段落H</a>
+          </div>
+        </div>
+      </h3>
 
       <div class="operator">
 
-        <div class="container"><!-- 國服最強上單 -->
+        <div class="container" id="斥罪"><!-- 國服最強上單 -->
     
           <div class="button-image-container">
             <table class="table-picture">
@@ -824,6 +1460,197 @@
           
         </div>
 
+        <div class="container" id="號角"><!-- 你想娶我?憑甚麼? -->
+    
+          <div class="button-image-container">
+            <table class="table-picture">
+              <tr>
+                <th>幹員立繪</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://prts.wiki/w/%E5%8F%B7%E8%A7%92" >官方網站介紹</a>
+                </td>
+              </tr>
+            </table>
+            <div class="button-group">
+              <button class="btn" id="button-號角-精零"> <img src="圖/固定元件/精零.png"> 精英化零</button>
+              <button class="btn" id="button-號角-精二"> <img src="圖/固定元件/精二.png"> 精英化二</button>
+              <button class="btn" id="button-號角-造型"> <img src="圖/固定元件/造型.png"> 化花</button>
+            </div>
+            <div class="image-group">
+              <img id="image-號角-精零" src="圖/幹員/號角/精零.png" alt="圖片3">
+            </div>
+          </div>
+    
+          <br>
+          <!-- 第一個表格 -->
+          <div class="table-container">
+            <table class="table-name">
+              <tr>
+                <th>幹員名稱</th>
+              </tr>
+              <tr>
+                <td class="text-cell" >號角</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 第二個表格 -->
+            <table class="table-introduce">
+                <tr>
+                <th>分支</th>
+                <th class="text-cell">分支介紹:要塞</th>
+                </tr>
+                <tr>
+                <td class="image-cell" rowspan="2">
+                  <div class="image-wrapper">
+                      <img src="圖/固定元件/要塞.png" alt="圖片">
+                  </div>
+                </td>
+                <td class="description-cell">不阻擋敵人時優先遠程群體物理攻擊</td>
+                </tr>
+            </table>
+    
+            <br>
+    
+            <table class="talent-1">
+              <tr>
+                <th>第一天賦:軍事要塞		</th>
+              </tr>
+              <tr>
+                <td>在場時所有重裝幹員的攻擊力+20%</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <table class="talent-1">
+              <tr>
+                <th>第二天賦:血戰</th>
+              </tr>
+              <tr>
+                <td>	被擊倒時不撤退，恢復所有生命且生命上限-50%，攻擊速度+18、防禦力+18%（單次部署只觸發一次）</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill1">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/號角/1.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">照明榴彈</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="autovery-cell">自動回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">自動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能1</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">下次攻擊時造成280%攻擊力的物理傷害，若為遠程攻擊則濺射範圍擴大且在周圍產生一個持續8秒的照明區域使敵人隱匿失效
+                  可充能2次</td>
+                <td>0</td>
+                <td>5</td>
+                <td></td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill2">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/號角/2.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">暴風號令</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="autovery-cell">自動回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能2</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">每次攻擊造成240%攻擊力的物理濺射傷害
+                  過載：每次攻擊額外造成60%攻擊力的法術濺射傷害，主動關閉時發射剩餘全部彈藥並流失60%生命值
+                  技能擁有10枚彈藥，可隨時主動關閉</td>
+                <td>18</td>
+                <td>25</td>
+                <td></td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill3">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/號角/3.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">終極防線</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="autovery-cell">自動回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能3</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">攻擊力+70%，攻擊間隔大幅縮短(-1.8)
+                  過載：攻擊力改為+140%，逐漸流失生命（12秒後到達最大生命12%/秒）該技能可隨時主動關閉</td>
+                <td>25</td>
+                <td>35</td>
+                <td>24</td>
+              </tr>
+            </table>
+          </div>
+      
+          
+        </div>
+
       </div>
       
     </section>
@@ -833,11 +1660,26 @@
         <img class="profession" src="圖/固定元件/醫療.png" >
         醫療
       </h2>
-      <h3>醫療幹員一覽</h3>
+      <h3>
+        醫療幹員一覽
+        <div class="dropdown medical-operator-dropdown">
+          <button class="dropbtn medical-operator-dropbtn" onclick="medicaltoggleOperatorDropdown()">醫療幹員快速導引</button>
+          <div class="dropdown-content medical-operator-dropdown-content">
+            <a href="#焰影葦草">焰影葦草</a>
+            <a href="#流明">流明</a>
+            <a href="#sectionC">段落C</a>
+            <a href="#sectionD">段落D</a>
+            <a href="#sectionE">段落E</a>
+            <a href="#sectionF">段落F</a>
+            <a href="#sectionG">段落G</a>
+            <a href="#sectionH">段落H</a>
+          </div>
+        </div>
+      </h3>
 
       <div class="operator">
 
-        <div class="container"><!-- 屍爆天星 -->
+        <div class="container" id="焰影葦草"><!-- 屍爆天星 -->
     
           <div class="button-image-container">
             <table class="table-picture">
@@ -1024,6 +1866,194 @@
           
         </div>
 
+        <div class="container" id="流明"><!-- 小魚 -->
+    
+          <div class="button-image-container">
+            <table class="table-picture">
+              <tr>
+                <th>幹員立繪</th>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://prts.wiki/w/%E6%B5%81%E6%98%8E" >官方網站介紹</a>
+                </td>
+              </tr>
+            </table>
+            <div class="button-group">
+              <button class="btn" id="button-流明-精零"> <img src="圖/固定元件/精零.png"> 精英化零</button>
+              <button class="btn" id="button-流明-精二"> <img src="圖/固定元件/精二.png"> 精英化二</button>
+              <button class="btn" id="button-流明-造型"> <img src="圖/固定元件/造型.png"> </button>
+            </div>
+            <div class="image-group">
+              <img id="image-流明-精零" src="圖/幹員/流明/精零.png" alt="圖片3">
+            </div>
+          </div>
+    
+          <br>
+          <!-- 第一個表格 -->
+          <div class="table-container">
+            <table class="table-name">
+              <tr>
+                <th>幹員名稱</th>
+              </tr>
+              <tr>
+                <td class="text-cell" >流明</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 第二個表格 -->
+            <table class="table-introduce">
+                <tr>
+                <th>分支</th>
+                <th class="text-cell">分支介紹:療養師</th>
+                </tr>
+                <tr>
+                <td class="image-cell" rowspan="2">
+                  <div class="image-wrapper">
+                      <img src="圖/固定元件/療養師.png" alt="圖片">
+                  </div>
+                </td>
+                <td class="description-cell">擁有較大治療範圍，但在治療較遠目標時治療量變為80%</td>
+                </tr>
+            </table>
+    
+            <br>
+    
+            <table class="talent-1">
+              <tr>
+                <th>第一天賦:灼痕	</th>
+              </tr>
+              <tr>
+                <td>造成傷害時有30%概率對敵人施加灼痕效果：攻擊力-20%、30%的【法術脆弱】，不可疊加持續6秒</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <table class="talent-1">
+              <tr>
+                <th>第二天賦:映耀</th>
+              </tr>
+              <tr>
+                <td>治療其他友方單位時，焰影葦草同時享受50%的治療量</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill1">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/流明/1.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">迅捷打擊·γ型</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="autovery-cell">自動回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能1</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">攻擊力+45%，攻擊速度+45</td>
+                <td>15</td>
+                <td>35</td>
+                <td>35</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill2">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/流明/2.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">枯榮共息</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="autovery-cell">自動回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能2</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">優先使兩名部署在地面的干員獲得三顆火球，效果如下：每1.5秒對一名敵人造成相當於焰影葦草240%攻擊力的法術傷害並僅對該干員觸發焰影葦草特性</td>
+                <td>18</td>
+                <td>27</td>
+                <td>20</td>
+              </tr>
+            </table>
+    
+            <br>
+    
+            <!-- 表格 -->
+            <table class="table-skill3">
+              <!-- 第一列 -->
+              <tr>
+                <td class="image-cell2"><img src="圖/幹員/流明/3.png" alt="圖片"></td>
+                <td class="last-cell3" width="250px">生命火種</td>
+                <td>
+                  <div class="color-overlay">
+                    <p class="autovery-cell">自動回復</p>
+                  </div>
+                  <div class="color-overlay">
+                    <p class="trigger-cell">手動觸發</p>
+                  </div>
+                </td>
+                <td class="last-cell" colspan="3">技能3</td>
+              </tr>
+              <!-- 第二列 -->
+              <tr class="second-row">
+                <td class="image-cell2" >等級</td>
+                <td class="last-cell" colspan="2">描述</td>
+                <td width="50px">初始</td>
+                <td width="50px">消耗</td>
+                <td width="50px">持續</td>
+              </tr>
+              <!-- 第三列 -->
+              <tr>
+                <td class="image-cell2" >RANKIII</td>
+                <td class="last-cell2" colspan="2">同時攻擊兩名敵人，攻擊力+60%，第一天賦觸發機率提升至100%，技能期間附帶灼痕效果的敵人每秒受到60%焰影葦草攻擊力的法術傷害、被擊倒時對周圍敵人造成140%焰影葦草攻擊力的法術傷害並施加灼痕效果
+                  灼痕效果持續至技能結束</td>
+                <td>30</td>
+                <td>40</td>
+                <td>30</td>
+              </tr>
+            </table>
+          </div>
+      
+          
+        </div>
+
       </div>
 
     </section>
@@ -1033,11 +2063,26 @@
         <img class="profession" src="圖/固定元件/輔助.png" >
         輔助
       </h2>
-      <h3>輔助幹員一覽</h3>
+      <h3>
+        輔助幹員一覽
+        <div class="dropdown auxiliary-operator-dropdown">
+          <button class="dropbtn auxiliary-operator-dropbtn" onclick="auxiliarytoggleOperatorDropdown()">輔助幹員快速導引</button>
+          <div class="dropdown-content auxiliary-operator-dropdown-content">
+            <a href="#淬羽赫默">淬羽赫默</a>
+            <a href="#sectionB">sectionB</a>
+            <a href="#sectionC">段落C</a>
+            <a href="#sectionD">段落D</a>
+            <a href="#sectionE">段落E</a>
+            <a href="#sectionF">段落F</a>
+            <a href="#sectionG">段落G</a>
+            <a href="#sectionH">段落H</a>
+          </div>
+        </div>
+      </h3>
 
       <div class="operator">
 
-        <div class="container"><!-- 幽靈鯊:你什麼意思? -->
+        <div class="container" id="淬羽赫默"><!-- 幽靈鯊:你什麼意思? -->
     
           <div class="button-image-container">
             <table class="table-picture">
@@ -1235,11 +2280,26 @@
         <img class="profession" src="圖/固定元件/術士.png" >
         術士
       </h2>
-      <h3>術士幹員一覽</h3>
+      <h3>
+        術士幹員一覽
+        <div class="dropdown warlock-operator-dropdown">
+          <button class="dropbtn warlock-operator-dropbtn" onclick="warlocktoggleOperatorDropdown()">術士幹員快速導引</button>
+          <div class="dropdown-content warlock-operator-dropdown-content">
+            <a href="#霍爾海雅">霍爾海雅</a>
+            <a href="#sectionB">sectionB</a>
+            <a href="#sectionC">段落C</a>
+            <a href="#sectionD">段落D</a>
+            <a href="#sectionE">段落E</a>
+            <a href="#sectionF">段落F</a>
+            <a href="#sectionG">段落G</a>
+            <a href="#sectionH">段落H</a>
+          </div>
+        </div>
+      </h3>
 
       <div class="operator">
 
-        <div class="container"><!-- 澀羽蛇 -->
+        <div class="container" id="霍爾海雅"><!-- 澀羽蛇 -->
     
           <div class="button-image-container">
             <table class="table-picture">
@@ -1435,11 +2495,26 @@
         <img class="profession" src="圖/固定元件/特種.png" >
         特種
       </h2>
-      <h3>特種幹員一覽</h3>
+      <h3>
+        特種幹員一覽
+        <div class="dropdown special-operator-dropdown">
+          <button class="dropbtn special-operator-dropbtn" onclick="specialtoggleOperatorDropdown()">特種幹員快速導引</button>
+          <div class="dropdown-content special-operator-dropdown-content">
+            <a href="#麒麟X夜刀">麒麟X夜刀</a>
+            <a href="#sectionB">sectionB</a>
+            <a href="#sectionC">段落C</a>
+            <a href="#sectionD">段落D</a>
+            <a href="#sectionE">段落E</a>
+            <a href="#sectionF">段落F</a>
+            <a href="#sectionG">段落G</a>
+            <a href="#sectionH">段落H</a>
+          </div>
+        </div>
+      </h3>
 
       <div class="operator">
 
-        <div class="container"><!-- 雙刀轉呀轉 -->
+        <div class="container" id="麒麟X夜刀"><!-- 雙刀轉呀轉 -->
     
           <div class="button-image-container">
             <table class="table-picture">

@@ -1,19 +1,21 @@
-document.getElementById('buttonB').addEventListener('click', function() {
-  var imageA = document.getElementById('imageA');
-  imageA.src = 'pic\operator\Muelsyse\elite2.png';
-});
+var dropdownContent = document.querySelector(".dropdown-content");
 
-document.getElementById('buttonA').addEventListener('click', function() {
-  var imageA = document.getElementById('imageA');
-  imageA.src = 'pic\operator\Muelsyse\elite0.png';
-});
+function showDropdownContent() {
+  dropdownContent.style.display = "block";
+}
 
-document.getElementById('buttonD').addEventListener('click', function() {
-  var imageC = document.getElementById('imageC');
-  imageC.src = '圖\幹員\聖約送葬人\精二.png';
-});
+function hideDropdownContent() {
+  dropdownContent.style.display = "none";
+}
 
-document.getElementById('buttonC').addEventListener('click', function() {
-  var imageC = document.getElementById('imageC');
-  imageC.src = '圖\幹員\聖約送葬人\精零.png';
-});
+dropdownContent.addEventListener("mouseover", showDropdownContent);
+dropdownContent.addEventListener("mouseout", hideDropdownContent);
+
+var dropdownButton = document.querySelector(".dropbtn");
+
+dropdownButton.addEventListener("click", toggleDropdown);
+
+function toggleDropdown() {
+  dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+}
+

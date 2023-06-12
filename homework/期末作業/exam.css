@@ -186,6 +186,45 @@ body {
     height: 750px;
   }
   
+  .scroll-menu {
+    position: fixed;
+    right: calc(50% - 880px);
+    bottom: calc(50px + 400px);
+    transform: translateX(50%);
+    width: 100px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+  }
+  
+  
+  .scroll-menu:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    display: block;
+    padding: 4px 0;
+    text-decoration: none;
+  }  
+
   .btn {
     width: 200px; /* 設定按鈕寬度 */
     height: 60px; /* 設定按鈕高度 */
@@ -204,6 +243,14 @@ body {
     height: 40px; /* 設定圖片高度 */
     margin-right: 5px; /* 設定圖片與文字之間的右邊距 */
   }
+
+  #scrollBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+  }
+  
   
   .table-picture{
     margin-bottom: 5px;
