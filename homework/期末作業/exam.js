@@ -1,3 +1,8 @@
+//版權警示
+window.onload = function() {
+  alert("此網站所用圖示、內容均來自明日方舟官方網站，版權所有方為其版权属于 Arknights/上海鹰角网络科技有限公司，此網站僅作整理與展示，無針對圖示、內容做任何修改，請勿用於商業用途。");
+}
+
 // 顯示或隱藏按鈕
 window.onscroll = function() {
   showScrollButton();
@@ -102,8 +107,46 @@ document.getElementById('button-伊內絲-精零').addEventListener('click', fun
   var imageA = document.getElementById('image-伊內絲-精零');
   imageA.src = '圖/幹員/伊內絲/精零.png';
 });
+//伺夜
+document.getElementById('button-伺夜-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-伺夜-精零');
+  imageA.src = '圖/幹員/伺夜/精二.png';
+});
 
+document.getElementById('button-伺夜-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-伺夜-精零');
+  imageA.src = '圖/幹員/伺夜/精零.png';
+});
+//焰尾
+document.getElementById('button-焰尾-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-焰尾-精零');
+  imageA.src = '圖/幹員/焰尾/精二.png';
+});
 
+document.getElementById('button-焰尾-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-焰尾-精零');
+  imageA.src = '圖/幹員/焰尾/精零.png';
+});
+
+document.getElementById('button-焰尾-造型').addEventListener('click', function() {
+  var imageA = document.getElementById('image-焰尾-精零');
+  imageA.src = '圖/幹員/焰尾/小健將.png';
+});
+//琴柳
+document.getElementById('button-琴柳-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-琴柳-精零');
+  imageA.src = '圖/幹員/琴柳/精二.png';
+});
+
+document.getElementById('button-琴柳-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-琴柳-精零');
+  imageA.src = '圖/幹員/琴柳/精零.png';
+});
+
+document.getElementById('button-琴柳-造型').addEventListener('click', function() {
+  var imageA = document.getElementById('image-琴柳-精零');
+  imageA.src = '圖/幹員/琴柳/識芳.png';
+});
 
 //近衛
 //聖約送葬人
@@ -126,6 +169,107 @@ document.getElementById('button-仇白-精零').addEventListener('click', functi
   var imageC = document.getElementById('image-仇白-精零');
   imageC.src = '圖/幹員/仇白/精零.png';
 });
+//重岳
+document.getElementById('button-重岳-精二').addEventListener('click', function() {
+  var imageC = document.getElementById('image-重岳-精零');
+  imageC.src = '圖/幹員/重岳/精二.png';
+});
+
+document.getElementById('button-重岳-精零').addEventListener('click', function() {
+  var imageC = document.getElementById('image-重岳-精零');
+  imageC.src = '圖/幹員/重岳/精零.png';
+});
+//瑪恩納
+document.getElementById('button-瑪恩納-精二').addEventListener('click', function() {
+  var imageC = document.getElementById('image-瑪恩納-精零');
+  imageC.src = '圖/幹員/瑪恩納/精二.png';
+});
+
+document.getElementById('button-瑪恩納-精零').addEventListener('click', function() {
+  var imageC = document.getElementById('image-瑪恩納-精零');
+  imageC.src = '圖/幹員/瑪恩納/精零.png';
+});
+//百煉嘉維爾
+document.getElementById('button-百煉嘉維爾-精二').addEventListener('click', function() {
+  var imageC = document.getElementById('image-百煉嘉維爾-精零');
+  imageC.src = '圖/幹員/百煉嘉維爾/精二.png';
+});
+
+document.getElementById('button-百煉嘉維爾-精零').addEventListener('click', function() {
+  var imageC = document.getElementById('image-百煉嘉維爾-精零');
+  imageC.src = '圖/幹員/百煉嘉維爾/精零.png';
+});
+//艾麗妮
+document.getElementById('button-艾麗妮-精二').addEventListener('click', function() {
+  var imageC = document.getElementById('image-艾麗妮-精零');
+  imageC.src = '圖/幹員/艾麗妮/精二.png';
+});
+
+document.getElementById('button-艾麗妮-精零').addEventListener('click', function() {
+  var imageC = document.getElementById('image-艾麗妮-精零');
+  imageC.src = '圖/幹員/艾麗妮/精零.png';
+});
+
+document.getElementById('button-艾麗妮-造型').addEventListener('click', function() {
+  var imageA = document.getElementById('image-艾麗妮-精零');
+  imageA.src = '圖/幹員/艾麗妮/飛羽.png';
+});
+//耀騎士臨光
+document.getElementById('button-耀騎士臨光-精二').addEventListener('click', function() {
+  var imageC = document.getElementById('image-耀騎士臨光-精零');
+  imageC.src = '圖/幹員/耀騎士臨光/精二.png';
+});
+
+document.getElementById('button-耀騎士臨光-精零').addEventListener('click', function() {
+  var imageC = document.getElementById('image-耀騎士臨光-精零');
+  imageC.src = '圖/幹員/耀騎士臨光/精零.png';
+});
+
+document.getElementById('button-耀騎士臨光-造型').addEventListener('click', function() {
+  var imageA = document.getElementById('image-耀騎士臨光-精零');
+  imageA.src = '圖/幹員/耀騎士臨光/復現榮光.png';
+});
+//帕拉斯
+document.getElementById('button-帕拉斯-精二').addEventListener('click', function() {
+  var imageC = document.getElementById('image-帕拉斯-精零');
+  imageC.src = '圖/幹員/帕拉斯/精二.png';
+});
+
+document.getElementById('button-帕拉斯-精零').addEventListener('click', function() {
+  var imageC = document.getElementById('image-帕拉斯-精零');
+  imageC.src = '圖/幹員/帕拉斯/精零.png';
+});
+
+document.getElementById('button-帕拉斯-造型一').addEventListener('click', function() {
+  var imageA = document.getElementById('image-帕拉斯-精零');
+  imageA.src = '圖/幹員/帕拉斯/傳承.png';
+});
+
+document.getElementById('button-帕拉斯-造型二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-帕拉斯-精零');
+  imageA.src = '圖/幹員/帕拉斯/山川的釀造.png';
+});
+//山
+document.getElementById('button-山-精二').addEventListener('click', function() {
+  var imageC = document.getElementById('image-山-精零');
+  imageC.src = '圖/幹員/山/精二.png';
+});
+
+document.getElementById('button-山-精零').addEventListener('click', function() {
+  var imageC = document.getElementById('image-山-精零');
+  imageC.src = '圖/幹員/山/精零.png';
+});
+
+document.getElementById('button-山-造型一').addEventListener('click', function() {
+  var imageA = document.getElementById('image-山-精零');
+  imageA.src = '圖/幹員/山/烏雲.png';
+});
+
+document.getElementById('button-山-造型二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-山-精零');
+  imageA.src = '圖/幹員/山/讀者.png';
+});
+
 
 
 
@@ -156,6 +300,67 @@ document.getElementById('button-菲亞梅塔-精零').addEventListener('click', 
   var imageA = document.getElementById('image-菲亞梅塔-精零');
   imageA.src = '圖/幹員/菲亞梅塔/精零.png';
 });
+//遠牙
+document.getElementById('button-遠牙-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-遠牙-精零');
+  imageA.src = '圖/幹員/遠牙/精二.png';
+});
+
+document.getElementById('button-遠牙-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-遠牙-精零');
+  imageA.src = '圖/幹員/遠牙/精零.png';
+});
+
+document.getElementById('button-遠牙-造型').addEventListener('click', function() {
+  var imageA = document.getElementById('image-遠牙-精零');
+  imageA.src = '圖/幹員/遠牙/捉風.png';
+});
+//假日威龍陳
+document.getElementById('button-假日威龍陳-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-假日威龍陳-精零');
+  imageA.src = '圖/幹員/假日威龍陳/精二.png';
+});
+
+document.getElementById('button-假日威龍陳-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-假日威龍陳-精零');
+  imageA.src = '圖/幹員/假日威龍陳/精零.png';
+});
+
+document.getElementById('button-假日威龍陳-造型').addEventListener('click', function() {
+  var imageA = document.getElementById('image-假日威龍陳-精零');
+  imageA.src = '圖/幹員/假日威龍陳/萬重山.png';
+});
+//ASH
+document.getElementById('button-ASH-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-ASH-精零');
+  imageA.src = '圖/幹員/ASH/精二.png';
+});
+
+document.getElementById('button-ASH-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-ASH-精零');
+  imageA.src = '圖/幹員/ASH/精零.png';
+});
+
+document.getElementById('button-ASH-造型').addEventListener('click', function() {
+  var imageA = document.getElementById('image-ASH-精零');
+  imageA.src = '圖/幹員/ASH/遊俠.png';
+});
+//空弦
+document.getElementById('button-空弦-精二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-空弦-精零');
+  imageA.src = '圖/幹員/空弦/精二.png';
+});
+
+document.getElementById('button-空弦-精零').addEventListener('click', function() {
+  var imageA = document.getElementById('image-空弦-精零');
+  imageA.src = '圖/幹員/空弦/精零.png';
+});
+
+document.getElementById('button-空弦-造型').addEventListener('click', function() {
+  var imageA = document.getElementById('image-空弦-精零');
+  imageA.src = '圖/幹員/空弦/宣傳策略.png';
+});
+
 
 
 
@@ -186,6 +391,27 @@ document.getElementById('button-號角-造型').addEventListener('click', functi
   var imageA = document.getElementById('image-號角-精零');
   imageA.src = '圖/幹員/號角/化花.png';
 });
+//泥岩
+document.getElementById('button-泥岩-精二').addEventListener('click', function() {
+  var imageC = document.getElementById('image-泥岩-精零');
+  imageC.src = '圖/幹員/泥岩/精二.png';
+});
+
+document.getElementById('button-泥岩-精零').addEventListener('click', function() {
+  var imageC = document.getElementById('image-泥岩-精零');
+  imageC.src = '圖/幹員/泥岩/精零.png';
+});
+
+document.getElementById('button-泥岩-造型一').addEventListener('click', function() {
+  var imageA = document.getElementById('image-泥岩-精零');
+  imageA.src = '圖/幹員/泥岩/靜謐午夜.png';
+});
+
+document.getElementById('button-泥岩-造型二').addEventListener('click', function() {
+  var imageA = document.getElementById('image-泥岩-精零');
+  imageA.src = '圖/幹員/泥岩/黑曜石.png';
+});
+
 
 
 

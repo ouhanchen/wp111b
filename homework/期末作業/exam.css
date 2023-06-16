@@ -72,7 +72,10 @@ body {
     margin-bottom: 20px;
   }
   
-  
+  .link {
+    color: #f2f2f2;
+  }
+
   .table-container {
     margin-right: 50px;
     flex: 1;
@@ -184,6 +187,24 @@ body {
   img {
     width: 750px;
     height: 750px;
+  }
+
+  .scrollBtn {
+    position: fixed;
+    right: calc(50% - 880px);
+    bottom: calc(50px + 400px);
+    transform: translateX(50%);
+    width: 100px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #000;
+    cursor: pointer;
+    left: 1735px;
   }
   
   .scroll-menu {
